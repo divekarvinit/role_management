@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User- Roles Form</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/custom.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.css">
+</head>
+<body>
+	<div class="container top-container">
+		<div class="row row-style" id = "user-action">
+			<div class="col-md-2">
+				<select class="form-control user-dropdown">
+				  	<!-- Populate Drop Down from Database. Presently it is done through JSON -->
+				</select>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-1 text-class">
+					OR
+				</div>
+				<div class="col-md-9 create-user-btn-div">
+					<button id = "create-user" class="btn btn-primary">Create User</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Insert Form Here-->
+		
+		<hr/>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<table class="table table-bordered">
+				  <thead>
+				    <tr>
+				      <th>RC</th>
+				      <th>Budget</th>
+				      <th>SVR</th>
+				      <th>HR</th>
+				    </tr>
+				  </thead>
+				  <tbody id="roles-table-body">
+				    <tr id="roles_1" name = "roles">
+				      <td scope="row">
+				      		<input type = "text" class="form-control" id = "rc_1" name = "rc_text" placeholder = "Enter RC">
+				      </td>
+				      <td>
+					  		<select id = "bud_dd_1" class="form-control budget-dropdown" name= "budget_dd">
+						  		<!-- Populate Drop Down from Database. Presently it is done through JSON -->
+							</select>
+					  </td>
+				      <td>
+				      		<select id = "svr_dd_1" class="form-control svr-dropdown" name= "svr_dd">
+						  		<!-- Populate Drop Down from Database. Presently it is done through JSON -->
+							</select>
+				      </td>
+				      <td>
+				      		<select id = "hr_dd_1" class="form-control hr-dropdown" name= "hr_dd">
+						  		<!-- Populate Drop Down from Database. Presently it is done through JSON -->
+							</select>
+				      </td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-5">
+				<button id = "save" class="btn btn-primary" onclick="saveData()">Save</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.js"></script>
+	<script type="text/javascript" src="./scripts/index.js"></script>
+</body>
+</html>
